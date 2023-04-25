@@ -6,4 +6,5 @@
                      (attribute_value) @javascript)
                    ]
                   (#is-filetype? "webc")
+                  (#not-eq? @_name "webc:root")
                   (#match? @_name "^((webc)?:|\\@(html|raw|text))"))
