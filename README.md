@@ -1,3 +1,5 @@
+![Am Yisrael Chai - עם ישראל חי](https://bennypowers.dev/assets/flag.am.yisrael.chai.png)
+
 # WebC for NeoVim
 
 [WebC](https://www.11ty.dev/docs/languages/webc/) support for NeoVim.
