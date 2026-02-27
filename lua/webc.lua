@@ -9,7 +9,7 @@ function M.setup()
     end
   end)
   vim.filetype.add { extension = { webc = 'webc' } }
-  vim.treesitter.language.add('html', { filetype = 'webc', })
+  vim.treesitter.language.register('html', 'webc')
 end
 
 return M
