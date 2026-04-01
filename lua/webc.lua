@@ -1,15 +1,9 @@
 local M = {}
 
 function M.setup()
-  vim.treesitter.query.add_predicate('is-filetype?', function(_, _, bufnr, pred)
-    if type(bufnr) == "number" then
-      return vim.bo[bufnr].filetype == pred[2]
-    else
-      return false
-    end
-  end)
-  vim.filetype.add { extension = { webc = 'webc' } }
-  vim.treesitter.language.register('html', 'webc')
+  -- filetype and language registration are handled by ftdetect/ and ftplugin/
+  -- predicate registration is handled by plugin/webc.lua
+  -- This function is kept for backwards compatibility
 end
 
 return M
